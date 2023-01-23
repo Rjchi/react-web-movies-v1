@@ -1,0 +1,25 @@
+.movieCard {
+    list-style: none;
+    text-align: center;
+}
+
+.movieImage {
+    border-radius: 15%;
+    -webkit-border-radius: 15%;
+    -moz-border-radius: 15%;
+    -ms-border-radius: 15%;
+    -o-border-radius: 15%;
+    background-color: #fff;
+}
+
+@media (max-width: 560px) {
+    .movieImage {
+        /* Para sobre escribir el valor de arriba */
+        width: 90%;
+        height: auto;
+    }
+}
+
+.movieCard:hover {
+    opacity: 0.9;
+}

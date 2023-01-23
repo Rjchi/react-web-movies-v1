@@ -1,0 +1,24 @@
+.spinner {
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+}
+
+/* animacion para que se mueva el spinner */
+
+.spinning {
+  /*Sele pasa como parametro un nombre el tiempo y la funcion infinite es para que se
+  ejecute la animacion siempre que este cargando*/
+  animation: mover 1s linear infinite;
+  -webkit-animation: mover 1s linear infinite;
+}
+
+@keyframes mover {
+  to {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}

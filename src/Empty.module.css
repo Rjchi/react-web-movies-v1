@@ -1,0 +1,11 @@
+.noResult {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  width: auto;
+  height: 200px;
+}
+
+.notFound {
+    padding-right: 30px;
+}

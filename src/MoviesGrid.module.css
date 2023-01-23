@@ -1,0 +1,18 @@
+/* Para cada elemento padre en este caso cada ul va a ser grid */
+
+.moviesGrid {
+    display: grid;
+    /* Filas automaticas y un ancho de 203px  */
+    grid-template-columns: repeat(auto-fill, 203px);
+    gap: 10px;
+    padding: 40px;
+    justify-content: center;
+}
+
+/* Utilizamos una mediaQuery para cambiar el tamaño dependiendo del dispositivo (px)*/
+@media (max-width: 560px) {
+    .moviesGrid {
+        /* Para sobre escribir el valor de arriba */
+        grid-template-columns: 100%;
+    }
+}

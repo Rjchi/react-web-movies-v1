@@ -1,3 +1,8 @@
+/* ESTOS ESTILOS SON GLOBALES NO PARTICULARES PARA QUE LOS ESTILOS 
+  SEAN INDEPENDIENTES SE DEBE CREAR UN DOCUMENTO PARA UN COMPONENTE EN PARTICULAR
+  SINTAXIS ESTANDAR (NOMBREDELCOMPONENTE.module.css)
+*/
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +10,16 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #000;
+  color: #fff;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
 }
