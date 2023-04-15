@@ -5,10 +5,7 @@
 // del elemento que se paso
 import { useEffect, useState } from "react";
 
-import { useLocation } from "react-router-dom";
-import { useQuery } from "./hooks/useQuery";
 //Importamos el json con las peliculas (Simulando una respuesta real de un servidor)
-import movies from "./Movies.json";
 import { MovieCard } from "./MovieCard";
 import styles from "./MoviesGrid.module.css";
 import { Spinner } from "./Spinner";
@@ -34,7 +31,7 @@ export const MoviesGrid = ({search}) => {
   // El estado inicial siempre va a ser la pagina 1
   const [page, setPage] = useState(1);
   const [hasMore, setHasMore] = useState(true);
-  const location = useLocation();
+  // const location = useLocation();
   // Con query renemos acceso a todo el parametro de ruta
   // const query = useQuery();
    // y como lo que nos intereza es el valor del search lo obtenemos de esta manera

@@ -1,4 +1,3 @@
-import movie from "./movie.json";
 import styles from "./MovieDetalles.module.css";
 import { get } from "../utils/httpClient.js";
 // Hooks de react-router-dom :

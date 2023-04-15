@@ -5,7 +5,6 @@ import { RiSearchFill } from "react-icons/ri";
 // evitamos el uso de js clasico (document.get...).value etc)
 // controlamos el valor que va a tener vacio y el valor que va a tener cada vez
 // que cambie
-import { useState } from "react";
 // Hook para el cambio de ruta v5
 //import { unstable_HistoryRouter as useHistory } from "react-router-dom";
 // useSearchParams es un Hook que nos permite trabajar con la query string de la URL
@@ -18,7 +17,7 @@ export const Search = () => {
   const search = query.get("search");
   useEffect(() => {
     setQuery({ search: search || "" });
-  }, []);
+  }, [search, setQuery]);
   // const [searchText, setSearchText] = useState("");
   // Para hacer un cambio de ruta utilizando el input de abajo lo que tenemos que hacer
   // es utilizar un Hook llamado useHistory nos da un objeto history que nos permite

@@ -1,4 +1,3 @@
-import { MoviesGrid } from "./MoviesGrid";
 import styles from "./App.module.css";
 // Utilizamos react router
 // con as sele coloca un alias a BrowserRouter
