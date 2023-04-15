@@ -1,4 +1,4 @@
-// Esto es una variable de ambiente (se utiliza para restringir el acceso)
+// Esto es una variable de entorno (se utiliza para restringir el acceso)
 const API = process.env.REACT_APP_API;
 // Y para acceder a ella utilizamos process.env.REACT_APP_NOMBRE;
 const API_TOKEN = process.env.REACT_APP_API_TOKEN;

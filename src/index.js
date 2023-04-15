@@ -7,8 +7,8 @@
 // para instalar se utiliza npm install react-router-dom
 // o este npm i react-router-dom@5 version 5
 
+import { createRoot } from 'react-dom/client';
 import React from "react";
-import ReactDOM from "react-dom";
 // Importamos los estilos
 import "./index.css";
 // Importamos el componente app para renderizarlo
@@ -94,10 +94,11 @@ import {App} from "./App.jsx";
 
 //Renderizamos el componente App 
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
-);
+createRoot(document.getElementById('root')).render(<App />);
+// ReactDOM.render(
+//   <App />,
+//   document.getElementById('root')
+// );
 
 
 
