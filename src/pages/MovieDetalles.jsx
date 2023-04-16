@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 // Este es el componente creado para mostrar una pantalla de carga
 import { Spinner } from "../Spinner";
+import MoviePlayer from "../components/MoviePlayer";
 
 //Siempre va el nombre del componente
 export const MovieDetalles = () => {
@@ -63,6 +64,9 @@ export const MovieDetalles = () => {
         <p>
           <b>Descripcion:</b> {movie.overview}
         </p>
+        <>
+          <MoviePlayer id={movieId}/>
+        </>
       </div>
     </div>
   );
