@@ -11,13 +11,12 @@
     font-size: 1rem;
     height: 20px;
     padding: 5px 30px 5px 10px;
-    border: none;
+    border-radius: 5px;
     outline: none;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 .searchBoton {
@@ -28,8 +27,4 @@
     height: 100%;
     border: none;
     background: transparent;
-}
-
-.searchInput:focus {
-    box-shadow: 0px 2px 6px #0cf158;;
 }
