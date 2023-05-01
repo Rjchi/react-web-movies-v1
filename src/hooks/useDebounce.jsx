@@ -1,9 +1,6 @@
 import { useEffect, useState } from "react";
 
-// Este Hook es para
-
 export const useDebounce = (value, delay) => {
-  // Obtenemos un estado...
   const [debouncedValue, setDebouncedValue] = useState(value);
   useEffect(
     () => {
