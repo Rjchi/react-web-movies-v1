@@ -1,5 +1,6 @@
 .title {
+    font-family: monospace, Courier;
     text-align: center;
     font-size: 3rem;
-    text-shadow: 5px 5px 6px #0cf158;
+    text-shadow: 5px 5px 6px #441eac;
 }
