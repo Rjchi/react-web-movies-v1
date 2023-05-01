@@ -1,17 +1,12 @@
 import styles from "./MovieDetalles.module.css";
 import { get } from "../utils/httpClient.js";
-// Hooks de react-router-dom :
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
-// Este es el componente creado para mostrar una pantalla de carga
 import { Spinner } from "../Spinner";
 import MoviePlayer from "../components/MoviePlayer";
 
 //Siempre va el nombre del componente
 export const MovieDetalles = () => {
-  // movieId contiene el identificador de una pelicula en el momento en que le
-  // damos click (el identificador es el id Se encuentra en las herramienta
-  // del desarrollador)
   const { movieId } = useParams();
   // Esto es para hacer el loger (circulo que demuestra al usuario que esta
   // cargando las peliculas)
